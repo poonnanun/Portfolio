@@ -1,5 +1,8 @@
-from django.http import HttpResponse
-
+from django.shortcuts import render
+from poonnanun.models import Contact
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    return render(request, 'index.html')
+
+def contact(request):
+    return render(request, 'index.html')
